@@ -1,0 +1,40 @@
+.ov-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.ov-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.ov-stats h2 { margin: 4px 0 0; font-size: 32px; }
+
+.ov-lower {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+.ov-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.ov-head h3 { margin: 0; }
+.ov-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+}
+.ov-check { display: block; margin-bottom: 8px; }
+
+@media (max-width: 900px) {
+  .ov-stats, .ov-lower { grid-template-columns: 1fr; }
+}

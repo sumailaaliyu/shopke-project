@@ -1,0 +1,20 @@
+.about { padding-top: 36px; }
+.about-title { font-size: clamp(34px, 5vw, 52px); max-width: 760px; }
+.about-mission { font-size: 18px; max-width: 620px; }
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 28px 0;
+}
+.about-heading { margin-top: 40px; }
+.about-photo {
+  background: var(--sage);
+  border-radius: 14px;
+  height: 140px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; }
+}

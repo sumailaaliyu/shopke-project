@@ -1,0 +1,41 @@
+.orders-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.orders-total { margin: 0 0 14px; }
+
+/* Scrolls sideways inside the card on narrow screens */
+.orders-card { overflow-x: auto; }
+.orders-table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+}
+.orders-table th,
+.orders-table td {
+  text-align: left;
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 2px 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.badge-pending { background: var(--marigold); color: var(--forest); }
+.badge-paid { background: var(--sage); color: var(--forest); }
+.badge-delivered { background: var(--leaf); color: var(--white); }
+
+.orders-select {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 4px 8px;
+  font: inherit;
+  background: var(--white);
+  color: var(--forest);
+}

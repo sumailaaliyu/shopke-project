@@ -1,0 +1,73 @@
+.onb {
+  max-width: 560px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+.onb-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--sage);
+  overflow: hidden;
+  margin: 8px 0 20px;
+}
+.onb-bar-fill {
+  height: 100%;
+  background: var(--leaf);
+  transition: width 0.25s;
+}
+
+.slug-box {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-input);
+  overflow: hidden;
+  background: var(--white);
+}
+.slug-prefix {
+  background: var(--page);
+  padding: 12px 12px;
+  color: var(--leaf);
+  white-space: nowrap;
+}
+.slug-box input {
+  border: none;
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  font: inherit;
+  background: var(--white);
+  color: var(--forest);
+}
+.onb-ok { color: var(--leaf); display: block; margin-top: 4px; }
+
+.onb-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 10px 0;
+}
+.onb-logo {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--sage) center / cover no-repeat;
+}
+
+.onb-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.onb-edit {
+  border: none;
+  background: none;
+  color: var(--leaf);
+  font: 700 15px var(--font-body);
+  cursor: pointer;
+}
+.onb-terms { display: block; margin: 14px 0 6px; }
+
+.onb-actions { display: flex; gap: 10px; margin-top: 16px; }
+.onb-actions .btn-full { width: auto; flex: 1; }

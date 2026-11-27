@@ -1,0 +1,24 @@
+.pay {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+.pay-select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-input);
+  padding: 12px 14px;
+  font: inherit;
+  background: var(--white);
+  color: var(--forest);
+}
+.pay-method {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+@media (max-width: 900px) {
+  .pay { grid-template-columns: 1fr; }
+}

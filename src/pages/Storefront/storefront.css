@@ -1,0 +1,44 @@
+.sf-header { background: var(--white); }
+.sf-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  gap: 12px;
+}
+.sf-name { font: 700 22px var(--font-heading); display: flex; align-items: center; gap: 8px; }
+.sf-logo { height: 30px; }
+
+.sf-hero { padding: 48px 0; }
+.sf-hero h1 { font-size: clamp(32px, 5vw, 48px); max-width: 520px; }
+
+.sf-main { padding-top: 24px; padding-bottom: 40px; }
+.sf-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+
+.sf-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 4), 1fr);
+  gap: 18px;
+}
+.sf-image {
+  background: var(--sage) center / cover no-repeat;
+  border-radius: var(--radius-card);
+  height: 150px;
+  margin-bottom: 8px;
+}
+.sf-order { margin-top: 8px; padding: 6px 16px; }
+
+.sf-footer {
+  background: var(--forest);
+  color: var(--sage);
+  padding: 22px 0;
+}
+
+/* Four columns on desktop, two on tablet, one on small phones */
+@media (max-width: 900px) {
+  .sf-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .sf-grid { grid-template-columns: 1fr; }
+}

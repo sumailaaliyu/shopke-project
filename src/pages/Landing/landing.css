@@ -1,0 +1,43 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding-block: 40px;
+}
+.hero h1 { font-size: clamp(36px, 6vw, 58px); }
+.hero-text { font-size: 18px; max-width: 480px; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero-visual {
+  background: var(--leaf);
+  border-radius: 28px;
+  height: 280px;
+  position: relative;
+}
+.hero-order { position: absolute; right: -12px; bottom: -24px; }
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding-top: 32px;
+}
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--marigold);
+  margin-bottom: 12px;
+}
+
+.cta-band {
+  background: var(--marigold);
+  text-align: center;
+  padding: 48px 24px;
+  margin-top: 48px;
+}
+
+@media (max-width: 900px) {
+  .hero, .features { grid-template-columns: 1fr; }
+  .hero-order { right: 12px; }
+}

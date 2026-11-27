@@ -1,0 +1,1 @@
+export const formatNaira = (amount) => '₦' + Number(amount).toLocaleString()

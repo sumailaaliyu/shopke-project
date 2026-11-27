@@ -1,0 +1,16 @@
+export const banks = [
+  'Access Bank',
+  'GTBank',
+  'Jaiz',
+  'First Bank',
+  'Union Bank',
+  'UBA',
+  'Zenith Bank',
+  'Opay',
+  'Palmpay',
+  'Kuda',
+  'Moniepoint',
+  'Wema Bank',
+  'Stanbic IBTC',
+  'Sterling Bank',
+]

@@ -1,0 +1,41 @@
+:root {
+  --forest: #14301f;
+  --leaf: #2f6b3f;
+  --marigold: #f2b632;
+  --page: #f3f6f0;
+  --sage: #dce8d6;
+  --border: #d5e0d1;
+  --white: #ffffff;
+  --radius-card: 18px;
+  --radius-input: 12px;
+  --font-heading: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--forest);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  margin: 0 0 0.4em;
+  line-height: 1.1;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
